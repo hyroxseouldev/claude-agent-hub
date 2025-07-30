@@ -181,7 +181,7 @@ export async function deleteAgentAction(id: string) {
       };
     }
 
-    await deleteAgent(id);
+    await deleteAgent(id, userId);
 
     revalidatePath("/");
     redirect("/");
